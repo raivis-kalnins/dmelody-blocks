@@ -64,6 +64,14 @@
 			"type": "boolean",
 			"default": false
 		},
+		"isSlider": {
+			"type": "boolean",
+			"default": false
+		},
+		"isSliderAutoplay": {
+			"type": "boolean",
+			"default": false
+		},
 		"isInline": {
 			"type": "string",
 			"default": ""

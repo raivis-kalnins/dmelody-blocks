@@ -25,7 +25,7 @@
 	 setAttributes,
 	 clientId
  } ) {
-	 const { blockId, bgAttach, mediaUrl, overColor, contBoxed, rowWidth, rowWidthXL, rowWidthLG, rowWidthMD, rowWidthSM, rowWidthVal, rowWidthValXL, rowWidthValLG, rowWidthValMD, rowWidthValSM, bgStyle, topPadding, topPaddingXL, topPaddingLG, topPaddingMD, topPaddingSM, botPadding, botPaddingXL, botPaddingLG, botPaddingMD, botPaddingSM, topMargin, rightMargin, bottomMargin, leftMargin, topMarginXD, rightMarginXD, bottomMarginXD, leftMarginXD, topMarginLG, rightMarginLG, bottomMarginLG, leftMarginLG, topMarginMD, rightMarginMD, bottomMarginMD, leftMarginMD, topMarginSM, rightMarginSM, bottomMarginSM, leftMarginSM, isAnimated, isAnimation, isSlider, isInline, allHidden, xlHidden, lgHidden, mdHidden, smHidden } = attributes;
+	 const { blockId, bgAttach, mediaUrl, overColor, contBoxed, rowWidth, rowWidthXL, rowWidthLG, rowWidthMD, rowWidthSM, rowWidthVal, rowWidthValXL, rowWidthValLG, rowWidthValMD, rowWidthValSM, bgStyle, topPadding, topPaddingXL, topPaddingLG, topPaddingMD, topPaddingSM, botPadding, botPaddingXL, botPaddingLG, botPaddingMD, botPaddingSM, topMargin, rightMargin, bottomMargin, leftMargin, topMarginXD, rightMarginXD, bottomMarginXD, leftMarginXD, topMarginLG, rightMarginLG, bottomMarginLG, leftMarginLG, topMarginMD, rightMarginMD, bottomMarginMD, leftMarginMD, topMarginSM, rightMarginSM, bottomMarginSM, leftMarginSM, isAnimated, isAnimation, isSlider, isSliderAutoplay, isInline, allHidden, xlHidden, lgHidden, mdHidden, smHidden } = attributes;
 
 	if ( ! blockId ) {
         setAttributes( { blockId: clientId } );
@@ -795,12 +795,12 @@
 					<a href='https://swiperjs.com/demos' target='_blank'>Swiper Demos</a>
 					{ isSlider && <SelectControl
 						label="Swiper Slider"
-						value={ isSlider }
+						value={ isSliderAutoplay }
 						options={ [
-							{ label: 'Static', value: 'fade-in-up animated' },
-							{ label: 'Auoplay', value: 'fade-in-down animated' }
+							{ label: 'Static', value: '' },
+							{ label: 'Auoplay', value: 'slider-section--autoplay' }
 						] }
-						onChange={ ( newStyle ) => setAttributes( {isSlider: newStyle} ) }
+						onChange={ ( newStyle ) => setAttributes( {isSliderAutoplay: newStyle} ) }
 					/>
 					}
 				</PanelBody>
