@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "dp/main-menu-block",
+	"title": "DP PHP Main Menu",
+	"category": "design",
+	"description": "DP PHP Main Menu generator",
+	"textdomain": "default",
+	"example": {},
+	"attributes": {
+		"post_types": {
+			"type": "object",
+			"default": {}
+		}
+	},
+	"supports": {
+		"anchor": true,
+		"html": false
+	},
+	"render": "file:./render.php",
+	"editorScript": "file:./index.js"	
+}
