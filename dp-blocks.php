@@ -74,7 +74,7 @@ add_action('admin_enqueue_scripts','wpdocs_enqueue_custom_admin_style');
 	unset( $blocks[ 'core/columns' ] );
 	unset( $blocks[ 'core/group' ] );
 	unset( $blocks[ 'core/stack' ] );
-	unset( $blocks[ 'core/embed' ] );
+	//unset( $blocks[ 'core/embed' ] );
 	unset( $blocks[ 'core/verse' ] );
 	// return the new list of allowed blocks
 	return array_keys( $blocks );
