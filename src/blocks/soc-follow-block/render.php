@@ -8,7 +8,6 @@
 		$tw = $fields['soc_tw'] ?? '';
 		$yt = $fields['soc_yt'] ?? '';
 		$tk = $fields['soc_tk'] ?? '';
-		var_dump($tk);
 
 		$content = '
 			<!-- wp:social-links {"iconColor":"foreground","iconColorValue":"#fff","openInNewTab":true,"size":"has-small-icon-size","align":"center","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left","flexWrap":"wrap"}} -->
